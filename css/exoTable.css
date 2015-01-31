@@ -1,0 +1,48 @@
+table {
+   width:50%;
+	max-width:600px;
+	border-style:solid;
+	border-width:0.2mm;
+	border-spacing:3mm;
+	background-color:yellow
+}
+
+tr {
+	height:50px;
+}
+
+td {
+	border-style:solid;
+	border-color:blue;
+	border-width:0.2mm;
+	font-size:13pt;
+	text-align:center;
+	font-family:sans-serif;
+}
+
+tr.lignedate {
+	background-color:salmon;
+}
+
+td.negatif {
+	color:red;
+	font-weight:bolder;
+}
+
+caption {
+	caption-side:bottom;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:green;
+	text-align:center;
+	font-weight:bolder;
+	font-size:105%; 
+} 
+
+colgroup#grp1 {
+	background-color:blue;
+}
+
+colgroup#grp2 {
+	background-color:green;
+}

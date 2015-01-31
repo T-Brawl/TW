@@ -1,0 +1,35 @@
+table {
+	border-style:solid;
+	border-collapse:collapse;
+}
+
+thead {
+	background-color:gray;
+	color:white;
+}
+
+thead tr:nth-child(1) {
+}
+
+tbody tr:nth-child(even) {
+	background-color:hsla(0,0%,70%,0.69)
+}
+
+tbody > tr > td {
+	border-color:black;
+	color:red;
+	text-align:right;
+}
+
+
+colgroup#nombres {
+	background-color:LightYellow;
+	width:100px;
+}
+
+colgroup#pcents {
+	border-style:solid;
+	border-color:LightGreen;
+	background-color:hsl(43,95%,75%);
+	width:50px;
+}
