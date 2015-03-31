@@ -1,21 +1,24 @@
 <html>
-<body>
-<?php
+	<body>
+		<?php
 
-function sortieTable($table) {
-echo '<table border="solid">' . "\n";
-foreach($table as $tab=>$val) {
-if (is_array($val)) {echo $tab . sortieTable($val);} else {
-echo "({$tab},{$val})";}
-}
-echo "</table>\n";
-}
+		function sortieTable($table) {
+			echo '<table border="solid">' . "\n";
+			foreach($table as $tab=>$val) {
+				if (is_array($val)) {
+					echo $tab . sortieTable($val);
+				} else {
+				echo "({$tab},{$val})";
+				}
+			}
+			echo "</table>\n";
+		}
 
-$liste = array(3 => "Pi", 42 => "Reponse" , 100 => array(0 => "NULL", 1 => "TRUE", 4 => "FALSE") , 65536 => "2¹⁶");
+		$liste = array(3 => "Pi", 42 => "Reponse" , 100 => array(0 => "NULL", 1 => "TRUE", 4 => "FALSE") , 65536 => "2¹⁶");
 
-sortieTable($liste);
+		sortieTable($liste);
 
 
-?>
-</body>
+		?>
+	</body>
 </html>
